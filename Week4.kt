@@ -1,0 +1,27 @@
+import kotlin.math.abs
+
+fun main(args: Array<String>) {
+    prefix(3, 5,7,9)
+}
+
+fun symbols() {
+    for (letter in 'a'..'f') {
+        println(letter)
+    }
+}
+
+fun isLetter(char: Char) = char in 'a'..'z'
+
+fun compareIntegersAbs(a: Int, b: Int, absolute: Boolean = false): String {
+    return if (absolute) {
+        if (abs(a) < abs(b)) "abs(a) < abs(b)" else if (abs(a) == abs(b)) "abs(a) == abs(b)" else "abs(a) > abs(b)";
+    } else {
+        if (a < b) "a < b" else if (a == b) "a == b" else "a > b";
+    }
+}
+
+fun prefix(vararg numbers: Int) {
+    for (i in numbers) {
+        println("number: $i")
+    }
+}
