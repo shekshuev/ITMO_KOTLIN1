@@ -1,7 +1,7 @@
 import kotlin.math.abs
 
 fun main(args: Array<String>) {
-    prefix(3, 5,7,9)
+    prefix(3, 5,7,9, prefix="number")
 }
 
 fun symbols() {
@@ -20,8 +20,8 @@ fun compareIntegersAbs(a: Int, b: Int, absolute: Boolean = false): String {
     }
 }
 
-fun prefix(vararg numbers: Int) {
+fun prefix(vararg numbers: Int, prefix: String) {
     for (i in numbers) {
-        println("number: $i")
+        println("$prefix: $i")
     }
 }
