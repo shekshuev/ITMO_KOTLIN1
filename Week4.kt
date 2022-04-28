@@ -10,7 +10,7 @@ fun symbols() {
     }
 }
 
-fun isLetter(char: Char) = char in 'a'..'z'
+fun isLetter(char: Char) = char in 'a'..'z' || char in 'A'..'Z'
 
 fun compareIntegersAbs(a: Int, b: Int, absolute: Boolean = false): String {
     return if (absolute) {
